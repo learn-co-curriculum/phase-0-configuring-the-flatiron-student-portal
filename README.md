@@ -27,9 +27,11 @@ have one_.
 
 ### Action Item
 
-1. Open the GitHub signup webpage (https://github.com/join)
+1. Open the [GitHub signup webpage][] (https://github.com/join)
 2. Fill out the form and create your account
 3. Verify the email address connected to your GitHub account
+
+[GitHub signup webpage]: https://github.com/join
 
 ### Check Your Work
 
@@ -53,10 +55,12 @@ in your browser and your terminal.
 5. Type `ssh-keygen` and press `<Enter>`
 6. For each prompt **do not type anything**, just continue to press `<Enter>`
 7. Type `cat ~/.ssh/id_rsa.pub | pbcopy` and press `<Enter>`
-8. Open the GitHub New SSH key form (https://github.com/settings/ssh/new) _(Note: you need to be logged in to GitHub to access that link.)_
+8. Open the [GitHub New SSH key form][] (https://github.com/settings/ssh/new) _(Note: you need to be logged in to GitHub to access that link.)_
 9. Type "My personal Mac" in the "Title" input field
 10. Paste what’s on your clipboard from step seven in the "Key" input field
 11. Click "Add SSH Key"
+
+[GitHub New SSH key form]: https://github.com/settings/ssh/new
 
 ### Check Your Work
 
@@ -70,21 +74,28 @@ to connect your Flatiron School Portal account to your GitHub account.
 
 ### Action Item
 
-1. Open the Flatiron School Student Portal webpage (https://portal.flatironschool.com) _(Note: you need to be logged in to Flatiron School Student Portal.)_
+1. Open the [Flatiron School Student Portal webpage][]
+   (https://portal.flatironschool.com) _(Note: you need to be logged in to
+   Flatiron School Student Portal.)_
 2. Click on "Course" in the navigation bar at the top of the screen
 3. Click the blue "Switch Materials" button in the dropdown
 4. Click on the course that you are about to start
-5. Open the GitHub Account Management webpage (https://learn.co/account/github)
+5. Open the [GitHub Account Management webpage][] (https://learn.co/account/github)
    _(Note: you may be asked to log in. Use your Flatiron School Student Portal
    username and password here.)_
    <!-- Note: this domain is not the Portal because of Canvas flows -->
 6. Connect your GitHub account to your Flatiron School Portal account
 
+[Flatiron School Student Portal webpage]: https://portal.flatironschool.com
+[GitHub Account Management webpage]: https://learn.co/account/github
+
 ### Check Your Work
 
-If you go back to the GitHub Account Management webpage
+If you go back to the [GitHub Account Management webpage][]
 (https://portal.flatironschool.com/account/github) and see a red "Disconnect"
 button, continue below.
+
+[GitHub Account Management webpage]: https://portal.flatironschool.com/account/github
 
 ## Configure the learn-co gem on macOS
 
@@ -99,7 +110,7 @@ terminal.
 1. Open the "Terminal" application using "Spotlight Search"
 2. Type `touch ~/.netrc && chmod 0600 ~/.netrc` and press `<Enter>` _(Note: you may be asked to enter your password.)_
 3. Type `learn whoami` and press `<Enter>` _(Note: don’t type anything here yet.)_
-4. Go to your Public Profile Management webpage
+4. Go to your [Public Profile Management webpage][]
    (https://portal.flatironschool.com/account/profile) in your browser _(Note:
    if you’re not logged in, you will need to log in again.)_
 5. Look for the "Username" heading and copy your username, but do not copy the
@@ -111,6 +122,8 @@ terminal.
     information." with a red background.
 8.  Copy the string of characters under the "OAuth token" header
 9.  Paste the string of characters into the terminal and press `<Enter>`
+
+[Public Profile Management webpage]: https://portal.flatironschool.com/account/profile
 
 ### Check Your Work
 
