@@ -86,7 +86,7 @@ If you go back to the GitHub Account Management webpage
 (https://portal.flatironschool.com/account/github) and see a red "Disconnect"
 button, continue below.
 
-## Configure the learn-co gem on Ubuntu
+## Configure the learn-co gem on macOS
 
 The learn-co gem is the tool that we’ll be using to test and submit the labs and
 lessons that we’re working on. Before you can use it, you will need to connect
