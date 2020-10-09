@@ -1,4 +1,4 @@
-# Configuring GitHub and Flatiron Student Portal
+# Configuring Git, GitHub, and the Flatiron Student Portal on macOS
 
 ## Install `git`
 
