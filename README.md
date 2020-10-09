@@ -2,18 +2,19 @@
 
 ## Install `git`
 
-<!-- ### Action item
+Git generally comes pre-installed with most operating systems, but you can check by running `git version` in the terminal. If this gives you an error or does not come back with a version number, you'll need to install Git. You can install it using Homebrew.
 
-Git generally comes pre-installed with most operating systems, but you can check
-by running `git version` in the terminal. If this gives you an error or does not
-come back with a version number, you'll need to install Git. you can get it
-using Homebrew:
+### Action item
 
-```sh
-brew install git
-```
+1. Open the "Terminal" application using "Spotlight Search"
+2. Type `brew install git` and press `<Enter>`
+3. Close the "Terminal" application
+4. Reopen the "Terminal" application using "Spotlight Search"
+5. Type `git version` and press `<Enter>`
 
-### Check your work -->
+### Check your work
+
+If you see a message starting with "git version...", continue below.
 
 ## Create a GitHub account
 
@@ -21,7 +22,7 @@ To work on and get credit for the labs and lessons that you work on during the p
 
 ### Action item
 
-1. Open the GitHub signup webpage at https://github.com/join
+1. Open the GitHub signup webpage (https://github.com/join)
 2. Fill out the form and create your account
 3. Verify the email address connected to your GitHub account
 
@@ -36,20 +37,20 @@ Git is the tool that we’ll use to download and upload the work that we do in l
 ### Action item
 
 1. Open the "Terminal" application using "Spotlight Search"
-2. Type “git config --global color.ui true” and press <Enter>
-3. Type “git config --global user.name” + <Space> + your name and press <Enter>
-4. Type “git config --global user.email” + <Space> + the email address you used to sign up to GitHub and press <Enter>
-5. Type “ssh-keygen” and press <Enter>
-6. For each prompt do not type anything, just continue to press <Enter>
-7. Type “cat ~/.ssh/id_rsa.pub | pbcopy” and press <Enter>
-8. Open the GitHub New SSH key form at https://github.com/settings/ssh/new (Note: you need to be logged in to GitHub to access that link.)
-9. Type “My personal Mac” in the “Title” input field
-10. Paste what’s on your clipboard in the “Key” input field
-11. Click “Add SSH Key”
+2. Type `git config --global color.ui true` and press `<Enter>`
+3. Type `git config --global user.name` + `<Space>` + your name and press `<Enter>`
+4. Type `git config --global user.email` + `<Space>` + the email address you used to sign up to GitHub and press `<Enter>`
+5. Type `ssh-keygen` and press `<Enter>`
+6. For each prompt **do not type anything**, just continue to press `<Enter>`
+7. Type `cat ~/.ssh/id_rsa.pub | pbcopy` and press `<Enter>`
+8. Open the GitHub New SSH key form (https://github.com/settings/ssh/new) _(Note: you need to be logged in to GitHub to access that link.)_
+9. Type "My personal Mac" in the "Title" input field
+10. Paste what’s on your clipboard from step seven in the "Key" input field
+11. Click "Add SSH Key"
 
 ### Check your work
 
-If you see your new SSH key beneath the “SSH keys” heading, continue below.
+If you see your new SSH key beneath the "SSH keys" heading, continue below.
 
 ## Connect your GitHub account to your Flatiron School Portal account
 
@@ -57,16 +58,16 @@ Flatiron School has some helpful tools for you when it comes to working on your 
 
 ### Action item
 
-1. Open the Flatiron School Student Portal webpage at https://portal.flatironschool.com (Note: you need to be logged in to Flatiron School Student Portal.)
-2. Click on “Course” in the navigation bar at the top of the screen
-3. Click the blue “Switch Materials” button in the dropdown
+1. Open the Flatiron School Student Portal webpage (https://portal.flatironschool.com) _(Note: you need to be logged in to Flatiron School Student Portal.)_
+2. Click on "Course" in the navigation bar at the top of the screen
+3. Click the blue "Switch Materials" button in the dropdown
 4. Click on the course that you are about to start
-5. Open the GitHub Account Management webpage at https://learn.co/account/github (Note: you may be asked to log in. Use your Flatiron School Student Portal username and password here.)<!-- Note: this domain is not the Portal because of Canvas flows -->
-8. Connect your GitHub account to your Flatiron School Portal account
+5. Open the GitHub Account Management webpage (https://learn.co/account/github) _(Note: you may be asked to log in. Use your Flatiron School Student Portal username and password here.)_<!-- Note: this domain is not the Portal because of Canvas flows -->
+6. Connect your GitHub account to your Flatiron School Portal account
 
 ### Check your work
 
-If you refresh the page and see a red “Disconnect” button, continue below.
+If you go back to the GitHub Account Management webpage (https://portal.flatironschool.com/account/github) and see a red "Disconnect" button, continue below.
 
 ## Configure the learn-co gem on Ubuntu
 
@@ -75,16 +76,14 @@ The learn-co gem is the tool that we’ll be using to test and submit the labs a
 ### Action item
 
 1. Open the "Terminal" application using "Spotlight Search"
-2. Type “touch ~/.netrc && chmod 0600 ~/.netrc” and press <Enter>
-3. You may be asked to enter your password
-4. Type “learn whoami” and press <Enter>
-5. Don’t type anything here yet
-6. Go to your Public Profile Management webpage at https://portal.flatironschool.com/account/profile in your browser (Note: if you’re not logged in, you will need to log in again.)
-7. Look for the "Username" heading and copy your username, but not `https://learn.co/`
-8. Go to `https://portal.flatironschool.com/` and add your username after the `/`, press `<Enter>`
-9.  Scroll all the way to the bottom of the page to the heading “The information below is sensitive and unique to your account. Only you can view this information.” with a red background.
-10. Copy the string of characters under the “OAuth token” header
-11. Paste the string of characters into the terminal and press <Enter>
+2. Type `touch ~/.netrc && chmod 0600 ~/.netrc` and press `<Enter>` _(Note: you may be asked to enter your password.)_
+3. Type `learn whoami` and press `<Enter>` _(Note: don’t type anything here yet.)_
+4. Go to your Public Profile Management webpage (https://portal.flatironschool.com/account/profile) in your browser _(Note: if you’re not logged in, you will need to log in again.)_
+5. Look for the "Username" heading and copy your username, but do not copy the text `https://learn.co/`
+6. Go to your Flatiron School Student Portal Profile page ("https://portal.flatironschool.com/" + your username)
+7.  Scroll all the way to the bottom of the page to the heading "The information below is sensitive and unique to your account. Only you can view this information." with a red background.
+8.  Copy the string of characters under the "OAuth token" header
+9.  Paste the string of characters into the terminal and press `<Enter>`
 
 ### Check your work
 
