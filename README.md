@@ -50,7 +50,7 @@ browser and your terminal.
 
 1. Open the "Terminal" application using "Spotlight Search"
 2. Type `git config --global color.ui true` and press `<Enter>`
-3. Type `git config --global user.name` + `<Space>` + your name and press `<Enter>`
+3. Type `git config --global user.name` + `<Space>` + your name and press `<Enter>` _(Note: this should be your full name, not your GitHub username, in quotes.)_
 4. Type `git config --global user.email` + `<Space>` + the email address you used to sign up to GitHub and press `<Enter>`
 5. Type `ssh-keygen` and press `<Enter>`
 6. For each prompt **do not type anything**, just continue to press `<Enter>`
