@@ -17,6 +17,8 @@ using Homebrew.
 
 ### Check Your Work
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6uqtJKuqbrU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 If you see a message starting with "git version...", continue below.
 
 ## Create a GitHub Account
@@ -26,6 +28,8 @@ program, you will need to sign up for a GitHub account _if you don’t already
 have one_.
 
 ### Action Item
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w-U97mW2XvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 1. Open the [GitHub signup webpage][] (https://github.com/join)
 2. Fill out the form and create your account
@@ -64,6 +68,8 @@ browser and your terminal.
 
 ### Check Your Work
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tvzcHODIIhQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 If you see your new SSH key beneath the "SSH keys" heading, continue below.
 
 ## Connect Your GitHub Account to your Flatiron School Portal Account
@@ -90,6 +96,8 @@ Flatiron School Portal account to your GitHub account.
 [GitHub Account Management webpage]: https://learn.co/account/github
 
 ### Check Your Work
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mIzuVjiNre4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 If you go back to the [GitHub Account Management webpage][]
 (https://portal.flatironschool.com/account/github) and see a red "Disconnect"
@@ -126,5 +134,7 @@ terminal.
 [Public Profile Management webpage]: https://portal.flatironschool.com/account/profile
 
 ### Check Your Work
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1eX_lwNfPCA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 If you see a message with your name, username, and email, continue to the next lesson, **Verify and Troubleshoot Your Environment Setup on macOS**.
