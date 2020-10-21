@@ -58,7 +58,7 @@ browser and your terminal.
 4. Type `git config --global user.email` + `<Space>` + the email address you used to sign up to GitHub and press `<Enter>`
 5. Type `ssh-keygen` and press `<Enter>`
 6. For each prompt **do not type anything**, just continue to press `<Enter>`
-7. Type `cat ~/.ssh/id_rsa.pub | pbcopy` and press `<Enter>`
+7. Type `cat ~/.ssh/id_rsa.pub | pbcopy` and press `<Enter>`. This will copy your SSH key to your clipboard
 8. Open the [GitHub New SSH key form][] (https://github.com/settings/ssh/new) _(Note: you need to be logged in to GitHub to access that link.)_
 9. Type "My personal Mac" in the "Title" input field
 10. Paste what’s on your clipboard from step seven in the "Key" input field
