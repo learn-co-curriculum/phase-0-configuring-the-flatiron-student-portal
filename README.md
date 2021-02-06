@@ -1,4 +1,8 @@
-# Configuring Git, GitHub, and the Flatiron Student Portal on macOS
+# Configuring the Flatiron Student Portal on macOS
+
+In phase 0, we practiced using git 
+
+Before beginning phase 1 of the course, 
 
 ## Install `git`
 
