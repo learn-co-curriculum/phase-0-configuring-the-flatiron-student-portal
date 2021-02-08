@@ -138,31 +138,31 @@ this assignment to follow along:
 
  3) In your terminal, navigate to where you'd like to put this repository locally, clone it down and
     navigate into the folder.
- 
-    ```
-    git clone git@github.com:<your-github-account-name>/macos-env-flatiron-student-portal.git
-    cd macos-env-flatiron-student-portal
-    ```
+
+```
+git clone git@github.com:<your-github-account-name>/macos-env-flatiron-student-portal.git
+cd macos-env-flatiron-student-portal
+```
 
  4) Instead of running `npm install` and `npm test` (or `bundle` and `rspec`), you can now run
     one command to handle this step:
 
-    ```
-    learn test
-    ```
+```
+learn test
+```
     
     This command will automatically run the installation and test commands. You should see a
     flurry of text as dependencies are installed, then the results of your test. This assignment
     has the same test as the previous **Complete Your First Software Engineering Assignment**. By
     cloning this assignment down, you've already passed the test!
 
-    ```
-    This assignment
-        ✓ has been correctly cloned to your local environment
+```
+This assignment
+    ✓ has been correctly cloned to your local environment
 
 
-      1 passing (5ms) 
-    ``` 
+  1 passing (5ms) 
+``` 
 
 When all tests are passing, you can head back to the assignment on Canvas.
 Refresh the assignment page and you should see that Canvas now registers the
