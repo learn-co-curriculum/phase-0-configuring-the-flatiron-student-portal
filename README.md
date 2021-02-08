@@ -139,7 +139,7 @@ this assignment to follow along:
  3) In your terminal, navigate to where you'd like to put this repository locally, clone it down and
     navigate into the folder.
  
-    ```sh
+    ```
     git clone git@github.com:<your-github-account-name>/macos-env-flatiron-student-portal.git
     cd macos-env-flatiron-student-portal
     ```
@@ -147,7 +147,7 @@ this assignment to follow along:
  4) Instead of running `npm install` and `npm test` (or `bundle` and `rspec`), you can now run
     one command to handle this step:
 
-    ```sh
+    ```
     learn test
     ```
     
@@ -156,7 +156,7 @@ this assignment to follow along:
     has the same test as the previous **Complete Your First Software Engineering Assignment**. By
     cloning this assignment down, you've already passed the test!
 
-    ```sh
+    ```
     This assignment
         ✓ has been correctly cloned to your local environment
 
