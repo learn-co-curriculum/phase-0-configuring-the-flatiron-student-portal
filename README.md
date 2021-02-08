@@ -1,4 +1,4 @@
-# Configuring the Flatiron Student Portal on macOS
+# Configuring the Flatiron Student Portal
 
 ## Introduction
 
