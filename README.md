@@ -1,100 +1,76 @@
 # Configuring the Flatiron Student Portal on macOS
 
-In phase 0, we practiced using git 
+## Introduction
 
-Before beginning phase 1 of the course, 
+As you continue your journey into programming, you will learn to
+use many tools to make your work easier that you only _sort of_ understand. 
+Node packages, Ruby gems, libraries, command-line applications, frontend
+frameworks, etc... many of these tools are actually built out of _other_ tools,
+things you may never have heard of. That is okay. 
 
-## Install `git`
+Thanks to the collective work of many programmers around the world, we're
+able to tap in to a diverse ecosystem of tools. We don't need to know how they
+all work together for them to be useful to us. You might one day know JavaScript
+well enough to build your own version [React](https://reactjs.org/), but you'll
+be able to use React long before you know how all the parts work. Many of these tools
+are designed to solve problems so we can focus our energy and time elsewhere.
 
-Git generally comes pre-installed with most operating systems, but you can check
-by running `git version` in the terminal. If this gives you an error or does not
-come back with a version number, you'll need to install Git. You can install it
-using Homebrew.
+We've already used a few tools to help us get started with programming. If you
+recall from the previous installation instructions, we've installed NVM, the Node
+Version Manager, which manages which version of Node you're using on your computer.
+We've been using NPM, Node **Package** Manager, to run local tests. We've also
+been using Git in the command line to interface remotely with GitHub.
 
-### Action Item
+In this lesson, we're going to introduce another tool that will help us going forward,
+the `learn-co` gem.
 
-1. Open the "Terminal" application using "Spotlight Search"
-2. Type `brew install git` and press `<Enter>`
-3. Close the "Terminal" application
-4. Reopen the "Terminal" application using "Spotlight Search"
-5. Type `git version` and press `<Enter>`
+## The `learn-co` Gem
 
-### Check Your Work
+So, if all these tools we use are meant to solve problems, what problems does the `learn-co` gem solve?
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6uqtJKuqbrU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+In your assignments so far, after cloning a repository, you typically do a few things while working through the assignment:
 
-If you see a message starting with "git version...", continue below.
+1) Run `npm install` or `bundle` to install any necessary dependencies for the repository (_...tools others have built to make things easier for us_)
 
-## Create a GitHub Account
+2) Run `npm test` or `rspec` to run tests
 
-To work on and get credit for the labs and lessons that you work on during the
-program, you will need to sign up for a GitHub account _if you don’t already
-have one_.
+3) Git commit and push your work to your GitHub remote
 
-### Action Item
+Once you've pushed your solution up to GitHub, you then have to submit a link in Canvas.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w-U97mW2XvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+The `learn-co` gem will take care of all of these steps using a single command, `learn test`! Let's
+get the gem installed and configured so we can test it out.
 
-1. Open the [GitHub signup webpage][] (https://github.com/join)
-2. Fill out the form and create your account
-3. Verify the email address connected to your GitHub account
+**Note:** The instructions here assume you've successfully installed Ruby and Node in the previous
+environment setup instructions.
 
-[GitHub signup webpage]: https://github.com/join
+## Install the `learn-co` Gem
 
-### Check Your Work
+To install the gem, run the following in your terminal:
 
-If you were able to verify your email address, continue below.
+```sh
+gem install learn-co
+```
 
-## Configure Git and GitHub
+Before we can use the gem, we'll need to do a few things:
 
-Git is the tool that we’ll use to download and upload the work that we do in
-labs and lessons. To use Git without signing in every time, you can create a
-Secure Shell (SSH) key and associate that to your GitHub account. Lastly, you
-will want to run a few commands to make sure that when you use Git, you get the
-proper credit for your work. This step will ask you to do work both in your
-browser and your terminal.
-
-### Action Item
-
-1. Open the "Terminal" application using "Spotlight Search"
-2. Type `git config --global color.ui true` and press `<Enter>`
-3. Type `git config --global user.name` + `<Space>` + your name and press `<Enter>` _(Note: this should be your full name, not your GitHub username, in quotes.)_
-4. Type `git config --global user.email` + `<Space>` + the email address you used to sign up to GitHub and press `<Enter>`
-5. Type `ssh-keygen` and press `<Enter>`
-6. For each prompt **do not type anything**, just continue to press `<Enter>`
-7. Type `cat ~/.ssh/id_rsa.pub | pbcopy` and press `<Enter>`. This will copy your SSH key to your clipboard
-8. Open the [GitHub New SSH key form][] (https://github.com/settings/ssh/new) _(Note: you need to be logged in to GitHub to access that link.)_
-9. Type "My personal Mac" in the "Title" input field
-10. Paste what’s on your clipboard from step seven in the "Key" input field
-11. Click "Add SSH Key"
-
-[GitHub New SSH key form]: https://github.com/settings/ssh/new
-
-### Check Your Work
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tvzcHODIIhQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-If you see your new SSH key beneath the "SSH keys" heading, continue below.
+- Connect your Flatiron School Portal account to GitHub
+- Connect the local gem to your Flatiron School Portal account
 
 ## Connect Your GitHub Account to your Flatiron School Portal Account
-
-Flatiron School has some helpful tools for you when working on your labs and
-lessons through GitHub. For those tools to work, you will need to connect your
-Flatiron School Portal account to your GitHub account.
 
 ### Action Item
 
 1. Open the [Flatiron School Student Portal webpage][]
    (https://portal.flatironschool.com) _(Note: you need to be logged in to
    Flatiron School Student Portal.)_
-2. Click on "Course" in the navigation bar at the top of the screen
-3. Click the blue "Switch Materials" button in the dropdown
-4. Click on the course that you are about to start
-5. Open the [GitHub Account Management webpage][] (https://learn.co/account/github)
+2. Navigate to your [Account Management page](https://learn.co/account) via the
+   drop-down menu in the upper right corner of the page
+3. Open the [Connected Apps tab][] (https://learn.co/account/github)
    _(Note: you may be asked to log in. Use your Flatiron School Student Portal
    username and password here.)_
    <!-- Note: this domain is not the Portal because of Canvas flows -->
-6. Connect your GitHub account to your Flatiron School Portal account
+4. Connect your GitHub account to your Flatiron School Portal account
 
 [Flatiron School Student Portal webpage]: https://portal.flatironschool.com
 [GitHub Account Management webpage]: https://learn.co/account/github
@@ -109,17 +85,14 @@ button, continue below.
 
 [GitHub Account Management webpage]: https://portal.flatironschool.com/account/github
 
-## Configure the learn-co gem on macOS
+## Configure the `learn-co` gem on macOS
 
-The learn-co gem is the tool that we’ll be using to test and submit the labs and
-lessons that we’re working on. Before you can use it, you will need to connect
-your Flatiron School Portal account to the copy of the learn-co gem on your
-computer. This step will ask you to do work both in your browser and your
+This step will ask you to do work both in your browser and your
 terminal.
 
 ### Action Item
 
-1. Open the "Terminal" application using "Spotlight Search"
+1. Open the "Terminal" application (or "Ubuntu" for WSL users)
 2. Type `touch ~/.netrc && chmod 0600 ~/.netrc` and press `<Enter>` _(Note: you may be asked to enter your password.)_
 3. Type `learn whoami` and press `<Enter>` _(Note: don’t type anything here yet.)_
 4. Go to your [Public Profile Management webpage][]
@@ -141,4 +114,135 @@ terminal.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1eX_lwNfPCA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-If you see a message with your name, username, and email, continue to the next lesson, **Verify and Troubleshoot Your Environment Setup on macOS**.
+If you see a message with your name, username, and email, you've successfully configured the gem.
+
+## Using the `learn-co` Gem
+
+The `learn-co` gem replaces some steps in assignment workflow you've learned so far and
+alters others. Let's walk through the updated process, starting with an assignment on Canvas. Use
+this assignment to follow along:
+
+1) In Canvas click the **Fork** button in the upper right corner of the page:
+
+   ![fork buttton](https://curriculum-content.s3.amazonaws.com/fork-link.png)
+
+   You should notice a change in the button's behavior - rather than bringing you to the fork page
+   in GitHub, you'll be redirected to your repository _already in the process_ of being forked.
+   
+ 2) Once your fork is ready, click the **Code** button and copy the **SSH** repository info by
+    clicking the clipboard button.
+
+   ![clone with SSH](https://curriculum-content.s3.amazonaws.com/canvas-welcome/clone-with-ssh.png)
+
+   **Note:** Make sure you're choosing SSH and not HTTPS.
+
+ 3) In your terminal, navigate to where you'd like to put this repository locally, clone it down and
+    navigate into the folder.
+ 
+    ```sh
+    git clone git@github.com:<your-github-account-name>/macos-env-flatiron-student-portal.git
+    cd macos-env-flatiron-student-portal
+    ```
+
+ 4) Instead of running `npm install` and `npm test` (or `bundle` and `rspec`), you can now run
+    one command to handle this step:
+
+    ```sh
+    learn test
+    ```
+    
+    This command will automatically run the installation and test commands. You should see a
+    flurry of text as dependencies are installed, then the results of your test. This assignment
+    has the same test as the previous **Complete Your First Software Engineering Assignment**. By
+    cloning this assignment down, you've already passed the test!
+
+    ```sh
+    This assignment
+        ✓ has been correctly cloned to your local environment
+
+
+      1 passing (5ms) 
+    ``` 
+
+When all tests are passing, you can head back to the assignment on Canvas.
+Refresh the assignment page and you should see that Canvas now registers the
+assignment as both **Submittted** and **Complete**, and you will be ready to
+move on to the next lesson. A URL to your fork has already been provided for
+the assignment
+
+Each assignment will be different and will include instructions on what is
+required to complete it. Some labs will have many tests. You can run
+`learn test` as many times as you'd like while working to solve these labs. You
+will submit your work to Canvas each time you do, but the assignment will be
+marked **Incomplete** until all tests are passing.
+
+### Your Work in GitHub
+
+Every time you run `learn test`, all the changes you've made locally will be stored
+on your GitHub fork of the repo. If you head back to your repo after running `learn test`,
+you should see a message that a new branch, `fis-wip`, has been created. This branch
+contains the work you've done so far. If you ever want to go back to a previous solution,
+go to that repository on GitHub and switch to the `fis-wip` branch.
+
+You no longer need to commit and push your local work for these assignments. 
+
+## Types of Assignments
+
+For most assignments, you will go through the process we just walked through. In our
+curriculum, these assignments are often referred to as **labs** - coding lessons
+that include tests. There are a few other types of assignments, though, that
+require slightly different submission steps:
+
+- **Code-alongs:** These also require code, but will guide you through what
+  needs to be written. There are no tests to pass, but you will still need to go
+  through forking, cloning, and running `learn test`. You should see a message
+  stating that no tests were found, but if you check the assignment in Canvas, you
+  should see it is marked as **Complete**.
+- **Portfolio Projects:** For these assignments, you'll be building fully functional
+  applications. Some guidelines and requirements will be provided, but it will
+  be up to you to design and create your own app. These will eventually become
+  the projects you showcase to potential employers!
+- **Blog Submissions:** Blogs are a required part of our Software Engineering
+  courses. They help to develop your online presence and are a great way to
+  reinforce the concepts you learn. You'll write your blog posts on a different
+  platform, but submit links to them in Canvas.
+
+## Submitting Projects and Blogs
+
+For project and blog assignments, you will not use the forking and cloning process. For projects,
+you'll likely be building from scratch rather than forking and cloning existing content. For
+blogs, you'll be writing your blog posts on some other platform online.
+
+In both cases, you'll need to manually submit a link to your work on Canvas.
+While viewing the assignment, you should see a **Submit Assignment** button in
+the upper-right section of the page.
+
+![submit assignment button](https://curriculum-content.s3.amazonaws.com/canvas-welcome/submit-assignment-canvas.png)
+
+Clicking this button will bring you to the bottom of the page where you can
+submit a URL link to your work.
+
+![submit assignment form](https://curriculum-content.s3.amazonaws.com/canvas-welcome/submit-assignment-canvas-form.png)
+
+Upon submission you should see confetti appear, indicating that your submission
+has been accepted.
+
+> **Note:** It is possible to submit lab and code-along assignments manually this way.
+> However, the assignment will only be marked as **Submitted**, not **Complete**. 
+
+## Conclusion
+
+You've completed your first assignment using the `learn-co` gem! You now know how to work
+on and submit assignments going forward:
+
+- Click the **Fork** button on the Canvas assignment
+- Once the assignment is forked, clone it down to your local machine
+- Complete any required work, then run `learn test`
+- If all tests pass, the assignment will be submitted to Canvas and marked as
+  **Complete**
+- Your work will also be pushed to GitHub and will be available on the `fis-wip`
+  branch
+
+Equipped with this knowledge, you are now ready to tackle greater challenges!
+
+[github to learn]: https://help.learn.co/en/articles/493055-connecting-github-with-learn
