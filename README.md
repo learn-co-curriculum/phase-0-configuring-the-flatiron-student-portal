@@ -80,15 +80,11 @@ Before we can use the gem, we'll need to do a few things:
 [GitHub Account Management webpage]: https://learn.co/account/github
 [Connected Apps tab]: https://learn.co/account/github
 
-### Check Your Work
-
-Navigate back to the [GitHub Account Management webpage][]
-(https://portal.flatironschool.com/account/github). You should see something
-similar to this:
+You should now see something similar to this:
 
 ![Github Successfully Connected](https://curriculum-content.s3.amazonaws.com/phase-0/configuring-the-flatiron-student-portal/Github_connected.png)
 
-## Configure the `learn-co` gem
+## Configure the `learn-co` Gem
 
 This step will ask you to do work both in your browser and your terminal.
 
@@ -107,9 +103,9 @@ This step will ask you to do work both in your browser and your terminal.
 6. Scroll all the way to the bottom of the page to the heading "The information
    below is sensitive and unique to your account. Only you can view this
    information." with a red background.
-7. Copy the string of characters under the "OAuth token" header
+7. Copy the string of characters under the "OAuth token" header.
 8. Go back to the terminal, type `learn whoami` and press `<Enter>`.
-9. Paste the string of characters at the prompt and press `<Enter>`
+9. Paste the string of characters at the prompt and press `<Enter>`.
 
 [Public Profile Management webpage]: https://portal.flatironschool.com/account/profile
 
@@ -124,7 +120,8 @@ The `learn-co` gem replaces some steps in the assignment workflow you've learned
 so far and alters others. Let's walk through the updated process. Use this
 assignment to follow along:
 
-1) In Canvas click the **Fork** button in the upper right corner of the page:
+1) On this assignment's Canvas page, click the **Fork** button in the upper
+   right corner of the page:
 
    ![fork buttton](https://curriculum-content.s3.amazonaws.com/fork-link.png)
 
@@ -165,9 +162,9 @@ This assignment
 
 When all tests are passing, you can head back to the assignment on Canvas.
 Refresh the assignment page and you should see that Canvas now registers the
-assignment as both **Submittted** and **Complete**, and you will be ready to
-move on to the next lesson. A URL to your fork has already been provided for the
-assignment.
+assignment as both **Submitted** and **Complete**. A URL to your fork of the
+assignment has been submitted in Canvas, so you are ready to move on to the next
+lesson.
 
 Each assignment will be different and will include instructions on what is
 required to complete it. Some labs will have many tests. You can run `learn
