@@ -11,9 +11,9 @@ heard of. That is okay.
 Thanks to the collective work of many programmers around the world, we're able
 to tap in to a diverse ecosystem of tools. We don't need to know how they all
 work together for them to be useful to us. You might one day know JavaScript
-well enough to build your own version [React](https://reactjs.org/), but you'll
-be able to use React long before you know how all the parts work. Many of these
-tools are designed to solve problems so we can focus our energy and time
+well enough to build your own version of [React](https://reactjs.org/), but
+you'll be able to use React long before you know how all the parts work. Many of
+these tools are designed to solve problems so we can focus our energy and time
 elsewhere.
 
 We've already used a few tools to help us get started with programming. If you
@@ -38,7 +38,7 @@ things while working through the assignment:
 
 2. Run `npm test` or `rspec` to run tests
 
-3. Git commit and push your work to your GitHub remote
+3. Git commit and push your work to your GitHub remote repo
 
 Once you've pushed your solution up to GitHub, you then have to submit a link in
 Canvas.
@@ -74,60 +74,55 @@ Before we can use the gem, we'll need to do a few things:
 3. Open the [Connected Apps tab][] (https://learn.co/account/github) _(Note: you
    may be asked to log in. Use your Flatiron School Student Portal username and
    password here.)_
-   <!-- Note: this domain is not the Portal because of Canvas flows -->
 4. Connect your GitHub account to your Flatiron School Portal account
 
 [Flatiron School Student Portal webpage]: https://portal.flatironschool.com
 [GitHub Account Management webpage]: https://learn.co/account/github
+[Connected Apps tab]: https://learn.co/account/github
 
 ### Check Your Work
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mIzuVjiNre4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Navigate back to the [GitHub Account Management webpage][]
+(https://portal.flatironschool.com/account/github). You should see something
+similar to this:
 
-If you go back to the [GitHub Account Management webpage][]
-(https://portal.flatironschool.com/account/github) and see a red "Disconnect"
-button, continue below.
+![Github Successfully Connected](https://curriculum-content.s3.amazonaws.com/phase-0/configuring-the-flatiron-student-portal/Github_connected.png)
 
-[GitHub Account Management webpage]: https://portal.flatironschool.com/account/github
-
-## Configure the `learn-co` gem on macOS
+## Configure the `learn-co` gem
 
 This step will ask you to do work both in your browser and your terminal.
 
 ### Action Item
 
-1. Open the "Terminal" application (or "Ubuntu" for WSL users)
-2. Type `touch ~/.netrc && chmod 0600 ~/.netrc` and press `<Enter>` _(Note: you
+1. Open the "Terminal" application (or "Ubuntu" for WSL users).
+2. Type `touch ~/.netrc && chmod 0600 ~/.netrc` and press `<Enter>`. _(Note: you
    may be asked to enter your password.)_
-3. Type `learn whoami` and press `<Enter>` _(Note: don’t type anything here
-   yet.)_
-4. Go to your [Public Profile Management webpage][]
-   (https://portal.flatironschool.com/account/profile) in your browser _(Note:
+3. Go to your [Public Profile Management webpage][]
+   (https://portal.flatironschool.com/account/profile) in your browser. _(Note:
    if you’re not logged in, you will need to log in again.)_
-5. Look for the "Username" heading and copy your username, but do not copy the
-   text `https://learn.co/`
-6. Go to your Flatiron School Student Portal Profile page
-   ("https://portal.flatironschool.com/" + your username)
-7. Scroll all the way to the bottom of the page to the heading "The information
+4. Look for the "Username" heading and copy your username, but do not copy the
+   text `https://learn.co/`.
+5. Go to your Flatiron School Student Portal Profile page
+   ("https://portal.flatironschool.com/" + your username).
+6. Scroll all the way to the bottom of the page to the heading "The information
    below is sensitive and unique to your account. Only you can view this
    information." with a red background.
-8. Copy the string of characters under the "OAuth token" header
-9. Paste the string of characters into the terminal and press `<Enter>`
+7. Copy the string of characters under the "OAuth token" header
+8. Go back to the terminal, type `learn whoami` and press `<Enter>`.
+9. Paste the string of characters at the prompt and press `<Enter>`
 
 [Public Profile Management webpage]: https://portal.flatironschool.com/account/profile
 
 ### Check Your Work
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1eX_lwNfPCA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-If you see a message with your name, username, and email, you've successfully
-configured the gem.
+Type `learn whoami` in the terminal. If you see a message with your name,
+username, and email, you've successfully configured the gem.
 
 ## Using the `learn-co` Gem
 
-The `learn-co` gem replaces some steps in assignment workflow you've learned so
-far and alters others. Let's walk through the updated process, starting with an
-assignment on Canvas. Use this assignment to follow along:
+The `learn-co` gem replaces some steps in the assignment workflow you've learned
+so far and alters others. Let's walk through the updated process. Use this
+assignment to follow along:
 
 1) In Canvas click the **Fork** button in the upper right corner of the page:
 
@@ -153,7 +148,7 @@ cd macos-env-flatiron-student-portal
 ```
 
  4) Instead of running `npm install` and `npm test` (or `bundle` and `rspec`),
-    you can now run one command, `learn test` to handle this step.  This command
+    you can now run one command, `learn test`, to handle this step.  This command
     will automatically run the installation and test commands. You should see a
     flurry of text as dependencies are installed, then the results of your test.
     This assignment has the same test as the previous **Complete Your First
@@ -172,7 +167,7 @@ When all tests are passing, you can head back to the assignment on Canvas.
 Refresh the assignment page and you should see that Canvas now registers the
 assignment as both **Submittted** and **Complete**, and you will be ready to
 move on to the next lesson. A URL to your fork has already been provided for the
-assignment
+assignment.
 
 Each assignment will be different and will include instructions on what is
 required to complete it. Some labs will have many tests. You can run `learn
@@ -206,7 +201,8 @@ that require slightly different submission steps:
 - **Portfolio Projects:** For these assignments, you'll be building fully
   functional applications. Some guidelines and requirements will be provided,
   but it will be up to you to design and create your own app. These will
-  eventually become the projects you showcase to potential employers!
+  eventually become the projects you showcase to potential employers! You will
+  submit your projects in Canvas by submitting a link to your GitHub repo.
 - **Blog Submissions:** Blogs are a required part of our Software Engineering
   courses. They help to develop your online presence and are a great way to
   reinforce the concepts you learn. You'll write your blog posts on a different
@@ -214,14 +210,9 @@ that require slightly different submission steps:
 
 ## Submitting Projects and Blogs
 
-For project and blog assignments, you will not use the forking and cloning
-process. For projects, you'll likely be building from scratch rather than
-forking and cloning existing content. For blogs, you'll be writing your blog
-posts on some other platform online.
-
-In both cases, you'll need to manually submit a link to your work on Canvas.
-While viewing the assignment, you should see a **Submit Assignment** button in
-the upper-right section of the page.
+For both portfolio projects and blog posts, you'll need to manually submit a
+link to your work on Canvas. While viewing the assignment, you should see a
+**Submit Assignment** button in the upper-right section of the page.
 
 ![submit assignment button](https://curriculum-content.s3.amazonaws.com/canvas-welcome/submit-assignment-canvas.png)
 
@@ -252,4 +243,4 @@ how to work on and submit assignments going forward:
 
 Equipped with this knowledge, you are now ready to tackle greater challenges!
 
-[github to learn]: https://help.learn.co/en/articles/493055-connecting-github-with-learn
+[GitHub Account Management webpage]: https://portal.flatironschool.com/account/github
