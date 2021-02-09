@@ -69,7 +69,7 @@ Before we can use the gem, we'll need to do a few things:
 1. Open the [Flatiron School Student Portal webpage][]
    (https://portal.flatironschool.com) _(Note: you need to be logged in to
    Flatiron School Student Portal.)_
-2. Navigate to your [Account Management page](https://learn.co/account) via the
+2. Navigate to your [Account Management page][] (https://learn.co/account) via the
    drop-down menu in the upper right corner of the page
 3. Open the [Connected Apps tab][] (https://learn.co/account/github) _(Note: you
    may be asked to log in. Use your Flatiron School Student Portal username and
@@ -77,6 +77,7 @@ Before we can use the gem, we'll need to do a few things:
 4. Connect your GitHub account to your Flatiron School Portal account
 
 [Flatiron School Student Portal webpage]: https://portal.flatironschool.com
+[Account Management page]: https://learn.co/account
 [GitHub Account Management webpage]: https://learn.co/account/github
 [Connected Apps tab]: https://learn.co/account/github
 
