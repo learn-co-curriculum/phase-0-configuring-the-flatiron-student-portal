@@ -184,7 +184,7 @@ the `fis-wip` branch.
 
 You no longer need to commit and push your local work for these assignments.
 
-> Note: if you see the following message on your repo's page in GitHub, please disregard it: 
+**Note:** if you see the following message on your repo's page in GitHub, please disregard it: 
 
 ![pr_prompt](https://curriculum-content.s3.amazonaws.com/phase-0/configuring-the-student-portal/fis-wip.jpg)
 
