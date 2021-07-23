@@ -66,24 +66,13 @@ Before we can use the gem, we'll need to do a few things:
 
 ### Action Item
 
-1. Open the [Flatiron School Student Portal webpage][]
-   (https://portal.flatironschool.com) _(Note: you need to be logged in to
-   Flatiron School Student Portal.)_
-2. Navigate to your [Account Management page][] (https://learn.co/account) via the
-   drop-down menu in the upper right corner of the page
-3. Open the [Connected Apps tab][] (https://learn.co/account/github) _(Note: you
-   may be asked to log in. Use your Flatiron School Student Portal username and
-   password here.)_
-4. Connect your GitHub account to your Flatiron School Portal account
-
-[Flatiron School Student Portal webpage]: https://portal.flatironschool.com
-[Account Management page]: https://learn.co/account
-[GitHub Account Management webpage]: https://learn.co/account/github
-[Connected Apps tab]: https://learn.co/account/github
+1. Open [Flatiron School's Base Account Management page][]
+   (https://base.flatironschool.com/account/manage)
+2. Connect your GitHub account to your Flatiron School Portal account
 
 You should now see something similar to this:
 
-![Github Successfully Connected](https://curriculum-content.s3.amazonaws.com/phase-0/configuring-the-flatiron-student-portal/Github_connected.png)
+![Github Successfully Connected](https://curriculum-content.s3.amazonaws.com/phase-0/configuring-the-flatiron-student-portal/base-account-manage.png)
 
 ## Configure the `learn-co` Gem
 
@@ -94,21 +83,14 @@ This step will ask you to do work both in your browser and your terminal.
 1. Open the "Terminal" application (or "Ubuntu" for WSL users).
 2. Type `touch ~/.netrc && chmod 0600 ~/.netrc` and press `<Enter>`. _(Note: you
    may be asked to enter your password.)_
-3. Go to your [Public Profile Management webpage][]
-   (https://portal.flatironschool.com/account/profile) in your browser. _(Note:
-   if you’re not logged in, you will need to log in again.)_
-4. Look for the "Username" heading and copy your username, but do not copy the
-   text `https://learn.co/`.
-5. Go to your Flatiron School Student Portal Profile page
-   ("https://portal.flatironschool.com/" + your username).
-6. Scroll all the way to the bottom of the page to the heading "The information
-   below is sensitive and unique to your account. Only you can view this
-   information." with a red background.
-7. Copy the string of characters under the "OAuth token" header.
-8. Go back to the terminal, type `learn whoami` and press `<Enter>`.
-9. Paste the string of characters at the prompt and press `<Enter>`.
+3. Open [Flatiron School's Base Account Management page][]
+   (https://base.flatironschool.com/account/manage)
+4. Click the icon under "OAuth Token" to reveal your GitHub OAuth token.
+5. Copy the string of characters under the "OAuth Token" header.
+6. Go back to the terminal, type `learn whoami` and press `<Enter>`.
+7. Paste the string of characters at the prompt and press `<Enter>`.
 
-[Public Profile Management webpage]: https://portal.flatironschool.com/account/profile
+[Flatiron School's Base Account Management page]: https://base.flatironschool.com/account/manage
 
 ### Check Your Work
 
