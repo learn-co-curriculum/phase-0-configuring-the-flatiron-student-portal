@@ -228,3 +228,4 @@ how to work on and submit assignments going forward:
 Equipped with this knowledge, you are now ready to tackle greater challenges!
 
 [GitHub Account Management webpage]: https://portal.flatironschool.com/account/github
+
