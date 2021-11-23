@@ -127,8 +127,8 @@ assignment to follow along:
     locally, clone it down and navigate into the folder.
 
 ```
-git clone git@github.com:<your-github-account-name>/macos-env-flatiron-student-portal.git
-cd macos-env-flatiron-student-portal
+git clone git@github.com:<your-github-account-name>/phase-0-configuring-the-flatiron-student-portal.git
+cd phase-0-configuring-the-flatiron-student-portal
 ```
 
  4) Instead of running `npm install` and `npm test` (or `bundle` and `rspec`),
