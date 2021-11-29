@@ -32,8 +32,8 @@ the gem in the next section; for now, let's get it installed and ready to use.
 To install the gem, open the "Terminal" application (or "Ubuntu" for WSL users)
 and run this command:
 
-```sh
-gem install learn-co
+```console
+$ gem install learn-co
 ```
 
 Before we can use the gem, we'll need to do two things:
@@ -45,7 +45,7 @@ Before we can use the gem, we'll need to do two things:
 
 ### Action Item
 
-1. Open [Flatiron School's Base Account Management page][]
+1. Open [Flatiron School's Base Account Management page][base]
    (https://base.flatironschool.com/account/manage)
 2. Connect your GitHub account to your Flatiron School Portal account
 
@@ -62,7 +62,7 @@ This step will ask you to do work both in your browser and your terminal.
 1. Open the "Terminal" application (or "Ubuntu" for WSL users).
 2. Type `touch ~/.netrc && chmod 0600 ~/.netrc` and press `<Enter>`. _(Note: you
    may be asked to enter your password.)_
-3. Open [Flatiron School's Base Account Management page][]
+3. Open [Flatiron School's Base Account Management page][base]
    (https://base.flatironschool.com/account/manage)
 4. Click the icon under "OAuth Token" to reveal your GitHub OAuth token.
 5. Copy the string of characters under the "OAuth Token" header.
@@ -73,3 +73,5 @@ This step will ask you to do work both in your browser and your terminal.
 
 Type `learn whoami` in the terminal. If you see a message with your name,
 username, and email, you've successfully configured the gem.
+
+[base]: https://base.flatironschool.com/account/manage
