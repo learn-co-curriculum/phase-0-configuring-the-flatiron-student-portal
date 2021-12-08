@@ -73,6 +73,6 @@ This step will ask you to do work both in your browser and your terminal.
 
 Type `learn whoami` in the terminal. If you see a message with your name,
 username, and email, continue to the next lesson, **Verify and Troubleshoot Your
-Environment Setup on macOS**.
+Environment Setup**.
 
 [base]: https://base.flatironschool.com/account/manage
