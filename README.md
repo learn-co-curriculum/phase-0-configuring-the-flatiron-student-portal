@@ -72,6 +72,7 @@ This step will ask you to do work both in your browser and your terminal.
 ### Check Your Work
 
 Type `learn whoami` in the terminal. If you see a message with your name,
-username, and email, you've successfully configured the gem.
+username, and email, continue to the next lesson, **Verify and Troubleshoot Your
+Environment Setup on macOS**.
 
 [base]: https://base.flatironschool.com/account/manage
